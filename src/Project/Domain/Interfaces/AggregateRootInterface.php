@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Base\Interfaces;
+namespace App\Project\Domain\Interfaces;
 
 interface AggregateRootInterface
 {

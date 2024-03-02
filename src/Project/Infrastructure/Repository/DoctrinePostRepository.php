@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Project\Infrastructure\Repository\Implementation;
+namespace App\Project\Infrastructure\Repository;
 
 use App\Project\Domain\PostAggregate;
+use App\Project\Domain\Repository\PostRepositoryInterface;
 use App\Project\Infrastructure\Entity\PostEntity;
-use App\Project\Infrastructure\Repository\PostRepositoryInterface;
 use DateTimeImmutable;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryProxy;
 use Doctrine\Persistence\ManagerRegistry;

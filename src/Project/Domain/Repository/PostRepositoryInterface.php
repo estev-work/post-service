@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Project\Infrastructure\Repository;
+namespace App\Project\Domain\Repository;
 
 use App\Project\Domain\PostAggregate;
 use Exception;

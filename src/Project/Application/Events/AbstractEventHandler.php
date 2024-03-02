@@ -2,7 +2,7 @@
 
 namespace App\Project\Application\Events;
 
-use App\Project\Infrastructure\EventPublisher\EventPublisherInterface;
+use App\Project\Domain\EventHandlers\EventPublisherInterface;
 use Monolog\Logger;
 
 abstract class AbstractEventHandler

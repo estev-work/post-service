@@ -2,8 +2,8 @@
 
 namespace App\Project\Domain;
 
-use App\Base\Interfaces\AggregateRootInterface;
 use App\Project\Domain\Exceptions\DomainTitleValidationException;
+use App\Project\Domain\Interfaces\AggregateRootInterface;
 use App\Project\Domain\ValueObjects\CreatedDate;
 use App\Project\Domain\ValueObjects\UpdatedDate;
 use Exception;

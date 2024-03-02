@@ -3,7 +3,7 @@
 namespace App\Project\Infrastructure\Entity;
 
 
-use App\Project\Infrastructure\Repository\PostRepositoryInterface;
+use App\Project\Domain\Repository\PostRepositoryInterface;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: PostRepositoryInterface::class)]

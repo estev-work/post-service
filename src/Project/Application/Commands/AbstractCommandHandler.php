@@ -2,7 +2,7 @@
 
 namespace App\Project\Application\Commands;
 
-use App\Project\Infrastructure\Repository\PostRepositoryInterface;
+use App\Project\Domain\Repository\PostRepositoryInterface;
 use Monolog\Logger;
 
 abstract class AbstractCommandHandler
