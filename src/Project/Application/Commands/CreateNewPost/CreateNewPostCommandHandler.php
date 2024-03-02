@@ -30,7 +30,7 @@ class CreateNewPostCommandHandler extends AbstractCommandHandler
         } catch (Exception $exception) {
             throw new CreatePostException();
         }
-        $this->logger->info("Created new post {$this->aggregate->getId()}");
+        $this->logger->info("Created new post " . $this->aggregate->getId());
         return $this->aggregate;
     }
 }

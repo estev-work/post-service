@@ -1,6 +1,6 @@
 <?php
 
-namespace tests\Project\Domain;
+namespace App\Tests\Project\Domain;
 
 use App\Project\Domain\Exceptions\DomainTitleValidationException;
 use App\Project\Domain\PostAggregate;
