@@ -4,15 +4,16 @@ namespace App\Project\Application\Events;
 
 use App\Project\Domain\EventHandlers\EventPublisherInterface;
 use Monolog\Logger;
+use Psr\Log\LoggerInterface;
 
 abstract class AbstractEventHandler
 {
-    protected Logger $logger;
+    protected LoggerInterface $logger;
 
     public function __construct(protected readonly EventPublisherInterface $eventPublisher)
     {
-        $this->logger = new Logger(static::class);
+        $this->logger = new Logger(self::class);
     }
 
-    public abstract function handle(AbstractEvent $event): void;
+    abstract public function handle(AbstractEvent $event): void;
 }

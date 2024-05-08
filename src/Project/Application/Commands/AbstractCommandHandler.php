@@ -4,15 +4,16 @@ namespace App\Project\Application\Commands;
 
 use App\Project\Domain\Repository\PostRepositoryInterface;
 use Monolog\Logger;
+use Psr\Log\LoggerInterface;
 
 abstract class AbstractCommandHandler
 {
-    protected Logger $logger;
+    protected LoggerInterface $logger;
 
     public function __construct(protected readonly PostRepositoryInterface $postRepository)
     {
-        $this->logger = new Logger(static::class);
+        $this->logger = new Logger(self::class);
     }
 
-    public abstract function handle(AbstractCommand $command);
+    abstract public function handle(AbstractCommand $command);
 }
